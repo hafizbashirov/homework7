@@ -1,0 +1,47 @@
+body{
+    background: rgb(0, 255, 123);
+}
+
+.star{
+    width: 25px;
+    height: 25px;
+    
+    color: rgb(255, 255, 255);
+    float: left;
+    display: flex;
+    top: 70px;
+    left: 300px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.star::before{
+    content: "";
+    width: 35px;
+    height: 1px;
+    background: white;
+    color: white;
+    float: left;
+    display: flex;
+    top: 12px;
+    left: -35px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.star::after{
+    content: "";
+    width: 35px;
+    height: 1px;
+    background: white;
+    color: white;
+    float: left;
+    display: flex;
+    top: 12px;
+    left: 25px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
